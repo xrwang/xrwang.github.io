@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>Altitudes of Urbanization</title>
+    
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="scripts/jarallax-0.2.1.js"></script>
+    <script type="text/javascript">
+      init = function(){
+        var jarallax = new Jarallax();
+        jarallax.setDefault('h2, h1, p, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18', {display:'none'});
+		
+        jarallax.addAnimation('.thermospherea', 
+		[{progress:'0%', opacity: '1', top:'30%'}, 
+		{progress:'24%', opacity: '0', top:'0%'}]);
+		
+		 jarallax.addAnimation('.thermosphereb', 
+		 [{progress:'0%', opacity: '1', top:'10%'}, 
+		 {progress:'25%', opacity: '0', top:'0%'}]);
+		 
+        jarallax.addAnimation('.mesosphere', 
+		[{progress:'0%', opacity: '0', top:'50%'}, 
+		{progress:'28%', opacity: '1', top:'30%'},
+		{progress:'38%', opacity: '0', top:'0%'}]);    
+		
+		jarallax.addAnimation('.meso-strato', 
+		[{progress:'0%', opacity: '0', top:'50%'}, 
+		{progress:'25%', opacity: '1', top:'20%'}, 
+		{progress:'35%', opacity: '0',top:'0%'}]);     
+		
+		jarallax.addAnimation('.stratosphere', 
+		[{progress:'0%', opacity: '0', top:'50%'}, 
+		{progress:'53%', opacity: '1', top:'30%'},
+		{progress:'70%', opacity: '0', top:'0%'}]);   
+		 
+		jarallax.addAnimation('.tropospherea', 
+		[{progress:'0%', opacity: '0', top:'55%'},
+		{progress:'68%', opacity: '0', top:'55%'},
+		{progress:'75%', opacity: '1', top:'50%'},
+		{progress:'80%', opacity: '0', top:'10%'}]);
+		
+		jarallax.addAnimation('.troposphereb', 
+		[{progress:'0%', opacity: '0', top:'55%'}, 
+		{progress:'66%', opacity: '0', top:'55%'},
+		{progress:'72%', opacity: '1', top:'50%'},
+		{progress:'81%', opacity: '0', top:'20%'}]);   
+		
+		
+		jarallax.addAnimation('.lithospherea', 
+		[{progress:'0%', opacity:'0',  top:'50%'},
+		{progress:'79%', opacity:'0',  top:'50%'}, 
+		{progress:'82%', opacity: '1', top:'50%'},
+		{progress:'86%', opacity:'0', top:'25%'}]);  
+		  
+		jarallax.addAnimation('.lithosphereb', 
+		[{progress:'0%', opacity:'0',  top:'50%'},
+		{progress:'79%', opacity:'0',  top:'50%'},
+		{progress:'80%', opacity: '1', top:'50%'}, 
+		{progress:'89%', opacity:'0', top:'30%'}]); 
+		
+		
+		jarallax.addAnimation('.hydrosphere', 
+		[{progress:'0%', opacity:'0',  top:'50%'},
+		{progress:'88%', opacity:'0',  top:'50%'},
+		{progress:'90%', opacity: '1', top:'50%'}, 
+		{progress:'98%', opacity:'0', top:'40%'}]);    
+	
+		
+        jarallax.addAnimation('h1', 
+		[{progress:'0%', top:'50px', opacity:'1', display:'block'}, 
+		{progress:'2%', top:'0px', opacity:'0'}]);
+		
+        jarallax.addAnimation('.head1', [{progress:'5%', left:'-20%', display:'block'}, 
+                                         {progress:'7%', left:'30%', display:'block'},
+                                         {progress:'12%', left:'50%'}]);
+                                     
+        jarallax.addAnimation('.head1', [{progress:'5%', opacity:'1'}, 
+                                         {progress:'14%', opacity:'0'}]);
+                                     
+        jarallax.addAnimation('.par1', [{progress:'5%', opacity:'0', display:'block'}, 
+                                        {progress:'7%', opacity:'1', display:'block'},
+                                        {progress:'10%', opacity:'1', display:'block'},
+                                        {progress:'12%', opacity:'0'}]);
+										
+		jarallax.addAnimation('.par_1a', [{progress:'5%', opacity:'0', display:'block'}, 
+                                        {progress:'7%', opacity:'1', display:'block'},
+                                        {progress:'10%', opacity:'1', display:'block'},
+                                        {progress:'12%', opacity:'0'}]);
+                                        
+        jarallax.addAnimation('.par_1b', [{progress:'5%', opacity:'0', display:'block'}, 
+                                        {progress:'7%', opacity:'1', display:'block'},
+                                        {progress:'10%', opacity:'1', display:'block'},
+                                        {progress:'12%', opacity:'0'}]);
+                                        
+                                        
+                                        
+        jarallax.addAnimation('.head2', [{progress:'18%', left:'-20%', display:'block'}, 
+                                         {progress:'19%', left:'30%', display:'block'},
+                                         {progress:'36%', left:'50%'}]);
+                                     
+        jarallax.addAnimation('.head2', [{progress:'18%', opacity:'1'}, 
+                                         {progress:'38%', opacity:'0'}]);
+                                     
+        jarallax.addAnimation('.par2', [{progress:'19%', opacity:'0', display:'block'}, 
+                                        {progress:'29%', opacity:'1', display:'block'},
+                                        {progress:'33%', opacity:'1', display:'block'},
+                                        {progress:'36%', opacity:'0'}]);
+                                        
+    	jarallax.addAnimation('.par_2a', [{progress:'19%', opacity:'0', display:'block'}, 
+                                        {progress:'29%', opacity:'1', display:'block'},
+                                        {progress:'33%', opacity:'1', display:'block'},
+                                        {progress:'36%', opacity:'0'}]);
+                                        
+    	jarallax.addAnimation('.par_2b', [{progress:'19%', opacity:'0', display:'block'}, 
+                                        {progress:'29%', opacity:'1', display:'block'},
+                                        {progress:'33%', opacity:'1', display:'block'},
+                                        {progress:'36%', opacity:'0'}]);
+                                        
+                                        
+                                        
+                                        
+        jarallax.addAnimation('.head3', [{progress:'53%', left:'-20%', display:'block'}, 
+                                         {progress:'54%', left:'30%', display:'block'},
+                                         {progress:'58%', left:'50%'}]);
+                                     
+        jarallax.addAnimation('.head3', [{progress:'53%', opacity:'1'}, 
+                                         {progress:'60%', opacity:'0'}]);
+                                     
+        jarallax.addAnimation('.par3', [{progress:'53%', opacity:'0', display:'block'}, 
+                                        {progress:'54%', opacity:'1', display:'block'},
+                                        {progress:'55%', opacity:'1', display:'block'},
+                                        {progress:'58%', opacity:'0'}]);
+                                        
+        jarallax.addAnimation('.par_3a', [{progress:'53%', opacity:'0', display:'block'}, 
+                                        {progress:'54%', opacity:'1', display:'block'},
+                                        {progress:'55%', opacity:'1', display:'block'},
+                                        {progress:'59%', opacity:'0'}]);
+        jarallax.addAnimation('.par_3b', [{progress:'53%', opacity:'0', display:'block'}, 
+                                        {progress:'54%', opacity:'1', display:'block'},
+                                        {progress:'55%', opacity:'1', display:'block'},
+                                        {progress:'59%', opacity:'0'}]);
+						
+						
+						
+						
+		
+	    jarallax.addAnimation('.head4', [{progress:'71%', left:'-20%', display:'block'}, 
+                                         {progress:'73%', left:'30%', display:'block'},
+                                         {progress:'76%', left:'50%'}]);
+		
+	    jarallax.addAnimation('.head4', [{progress:'71%', opacity:'1'}, 
+                                         {progress:'77%', opacity:'0'}]);
+                                     
+        jarallax.addAnimation('.par4', [{progress:'73%', opacity:'0', display:'block'}, 
+                                        {progress:'74%', opacity:'1', display:'block'},
+                                        {progress:'75%', opacity:'1', display:'block'},
+                                        {progress:'76%', opacity:'0'}]);
+        jarallax.addAnimation('.par_4a', [{progress:'73%', opacity:'0', display:'block'}, 
+                                        {progress:'74%', opacity:'1', display:'block'},
+                                        {progress:'75%', opacity:'1', display:'block'},
+                                        {progress:'76%', opacity:'0'}]);
+        jarallax.addAnimation('.par_4b', [{progress:'73%', opacity:'0', display:'block'}, 
+                                        {progress:'74%', opacity:'1', display:'block'},
+                                        {progress:'75%', opacity:'1', display:'block'},
+                                        {progress:'76%', opacity:'0'}]);
+                                        
+                                        
+                                        
+      
+		jarallax.addAnimation('.head5', [{progress:'82%', left:'-20%', display:'block'}, 
+                                         {progress:'84%', left:'50%', display:'block'},
+                                         {progress:'86%', left:'50%'}]);
+		
+	    jarallax.addAnimation('.head5', [{progress:'82%', opacity:'1'}, 
+                                         {progress:'87%', opacity:'0'}]);
+                                     
+        jarallax.addAnimation('.par5', [{progress:'82%', opacity:'0', display:'block'}, 
+                                        {progress:'84%', opacity:'1', display:'block'},
+                                        {progress:'85%', opacity:'1', display:'block'},
+                                        {progress:'86%', opacity:'0'}]);
+        jarallax.addAnimation('.par_5a', [{progress:'82%', opacity:'0', display:'block'}, 
+                                        {progress:'84%', opacity:'1', display:'block'},
+                                        {progress:'85%', opacity:'1', display:'block'},
+                                        {progress:'86%', opacity:'0'}]);
+        jarallax.addAnimation('.par_5b', [{progress:'82%', opacity:'0', display:'block'}, 
+                                        {progress:'84%', opacity:'1', display:'block'},
+                                        {progress:'85%', opacity:'1', display:'block'},
+                                        {progress:'86%', opacity:'0'}]);
+                                        
+                                        
+		jarallax.addAnimation('.head6', [{progress:'85%', left:'-20%', display:'block'}, 
+                                         {progress:'90%', left:'50%', display:'block'},
+                                         {progress:'96%', left:'50%'}]);
+		
+	    jarallax.addAnimation('.head6', [{progress:'86%', opacity:'1'}, 
+                                         {progress:'97%', opacity:'0'}]);
+                                         
+                                     
+        jarallax.addAnimation('.par6', [{progress:'85%', opacity:'0', display:'block'}, 
+                                        {progress:'90%', opacity:'1', display:'block'},
+                                        {progress:'94%', opacity:'1', display:'block'},
+                                        {progress:'96%', opacity:'0'}]);
+        jarallax.addAnimation('.par_6a', [{progress:'85%', opacity:'0', display:'block'}, 
+                                        {progress:'90%', opacity:'1', display:'block'},
+                                        {progress:'94%', opacity:'1', display:'block'},
+                                        {progress:'96%', opacity:'0'}]);
+        jarallax.addAnimation('.par_6b', [{progress:'85%', opacity:'0', display:'block'}, 
+                                        {progress:'90%', opacity:'1', display:'block'},
+                                        {progress:'94%', opacity:'1', display:'block'},
+                                        {progress:'96%', opacity:'0'}]);
+                                              
+	  }
+    </script>
+<style type="text/css">
+	#bottom {
+		position:fixed;
+		font-family: sans-serif;
+		font-size: 40%; 
+		right:0;
+		bottom:5px;
+		left:5px;
+		
+	}
+
+	#bottom > img {
+		display:block;
+		margin:auto;
+	}
+	
+	</style>
+
+    
+</head>
+
+<body onload="init()">
+<body data-0="background-image:linear-gradient(0deg, hsl(0, 0%, 70%), hsl(0, 0%, 50%));" data-300000="background-image:linear-gradient(3600deg, hsl(0, 0%, 10%), hsl(0, 0%, 0%));">
+	<div id="skrollr-body">
+    <div id="top">
+			<h1>altitudes
+            <br>
+            of urbanization<br>
+			↓
+            <font size="-6">
+            scroll down for sortable list link
+            </h1>
+		</div>
+	</div>
+    
+
+
+<div class="thermospherea"></div>
+<div class="thermosphereb"></div>
+    <div class="mesosphere"></div>
+    <div class="meso-strato"></div>
+    <div class="stratosphere"></div>
+    <div class="tropospherea"></div>
+<div class="troposphereb"></div>
+   <div class="lithospherea"></div>
+    <div class="lithosphereb"></div>
+    <div class="hydrosphere"></div>
+ 
+    <h2 class="head1">+85km | +10°C</h2>
+    <p class="par1"><a href="http://arstechnica.com/science/2013/07/how-nasa-steers-the-international-space-station-around-space-junk/"> Geostationary Orbit: 35,786 km</a></p>
+    <p2 class="par_1b"><a href="http://gizmodo.com/5895911/are-gps-signals-the-key-to-predicting-earthquakes">Earthquake prediction using GPS: 23222km</a></p2>
+    <p3 class="par_1a"><a href="http://www.philebrity.com/2013/10/04/film-sweat-kenophobia/">Kenophobia: 160km above earth, no one can hear you scream </a></p3>
+    
+    
+    
+    <h2 class="head2">+30km | -30°C</h2>
+    <p4 class="par2"><a href="http://news.cnet.com/8301-11386_3-57601588-76/virgin-galactic-aircraft-cruises-to-supersonic-speeds/">Virgin Galactic, Brits in Space: 110km </a> </p4>
+	<p5 class="par_2a"><a href="http://science.dodlive.mil/2013/09/09/the-space-between-space-traffic-and-high-altitude-arctic-clouds/">Weird Noctilucent Polar Clouds: 80km</a></p5>
+	<p6 class="par_2b"><a href="http://www.youtube.com/watch?v=IDIYX_kj0iE"> Brooklyn Space Program: At 30.48km, can you hear me now?</a></p6>
+
+    
+    
+    <h2 class="head3">+10km | 0°C</h2>
+    <p7 class="par3"><a href="http://www.space.com/19823-russia-meteor-explosion-complete-coverage.html">Something even better than oil hits Russia: 23 km</a></p7>
+    <p8 class="par_3a"><a href="http://news.bbc.co.uk/2/hi/south_asia/4467766.stm"> Joining the 13 Mile High Club...of hot air ballooning: 21.3km</a></p8>
+    <p9 class="par_3b"><a href="http://www.nbcnews.com/technology/ex-military-drones-now-surveil-storms-not-targets-8C11128876">Make Weather, Not War : 19km</a></p9>
+    
+    
+    <h2 class="head4">+0km | 16°C</h2>
+    <p10 class="par4"><a href="http://en.wikipedia.org/wiki/Intertropical_Convergence_Zone">Global North <3 Global South at the Intertropical Convergence Zone</a></p10>
+    <p11 class="par_4a"><a href="http://www.pobonline.com/articles/89317-web-exclusive-establishing-sea-level-datum">What does "Sea Level" even mean anyways? Standardizing the arbitrary...</a></p11>
+    <p12 class="par_4b"><a href="http://www.npr.org/2013/09/20/224439600/birding-the-fall-migration">Enjoying some fall bird migrations, a how-to</a></p12>
+    
+    <h2 class="head5">-0km | 870°C</h2>
+    <p13 class="par_5"><a href="http://articles.economictimes.indiatimes.com/2013-09-28/news/42481579_1_diamond-traders-diamond-mining-biggest-diamond">Even better than a corn field, a field of diamonds (that should solve India's poverty problem): -150 km</a></p13>
+    <p14 class="par_5a"><a href="http://www.natureworldnews.com/articles/4072/20130920/earths-biggest-deep-earthquake-puzzles-researchers.htm"> Deepest earthquake under the Okhotsk Sea: -608km</a></p14>
+    <p15 class="par_5b"><a href="http://boingboing.net/2013/09/09/how-planet-earth-got-its-invi.html"> Magnetic Anomalies and Cool Pix</a></p15>
+    
+    <h2 class="head6">-1km | 1°C</h2>
+    <p16 class="par6"><a href="https://twitter.com/oceansareurban"> Urban Ocean Project @ Harvard </a></p16>
+    <p17 class="par_6a"><a href="http://motherboard.vice.com/blog/unprecedented-extreme-weather-is-about-to-hit-the-us-and-its-non-functioning-government"> NWS shut down while Hurricane Karen speeds towards Gulf</a></p17>
+    <p18 class="par_6b"><a href="http://www.youtube.com/watch?v=YDBtCb61Sd4"> American Beauty meets Werner Herzog</a></p18>
+    
+    <p class="par7">sortable list <a href="excel/index.html">here</a>
+    </p>
+    
+
+    
+<div id="bottom" data-300000-end="opacity:0;" data-end="opacity:1;">
+		<font-size="+3">Sortable list available <a href="excel/index.html"> here </a></font><br><br>
+		Created with: <a href="http://jquery.com">jQuery </a> and <a href="https://github.com/Prinzhorn/skrollr">skrollr</a>
+        
+	</div>
+
+	<script type="text/javascript" src="skrollr.min.js"></script>
+
+	<script type="text/javascript">
+	skrollr.init();
+	</script>
+    
+    
+</body>
+
+</html>
