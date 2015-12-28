@@ -1,0 +1,25 @@
+{
+  "name": "xrwang.github.io",
+  "version": "1.0.0",
+  "description": "website for xrw",
+  "main": "index.js",
+  "scripts": {
+    "test": "bamp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrwang/xrwang.github.io.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "xiaowei wang",
+  "license": "mit open source",
+  "bugs": {
+    "url": "https://github.com/xrwang/xrwang.github.io/issues"
+  },
+  "homepage": "https://github.com/xrwang/xrwang.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}

@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+body {
+background: #FBD3E9; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FBD3E9 , #BB377D); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FBD3E9 , #BB377D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+.cover{
+  overflow: hidden;
+
+  h1{
+    padding-top: 2em;
+    font-size: 3em;
+  }
+  p{
+    font-size: 1.5em;
+    padding: 1em 3em 1em 3em;
+  }
+  a{
+    color: #1A7C88;
+  }
+  a:hover{
+    color: #767C88;
+  }
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2em 2em;
+  p.instructions{
+    font-weight:400;
+  }
+}
+
+@media screen and (max-width: 880px) {
+    body {
+        font-size: 10px;
+    }
+}

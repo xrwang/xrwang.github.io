@@ -1,14 +1,126 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
  <head>
   <meta charset="UTF-8">
   <title>secret XRW files</title>
+  <link rel="stylesheet" type="text/css" href="/css/all.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
  </head>
  <body>
- <ul>
+   <div class="cover">
+     <h1>Hi!</h1>
+     <p>I'm Xiaowei R. Wang, a designer, dreamer, and amateur geographer. I work at <a href="http://mapbox.com" target="_blank">Mapbox</a>.</p>
+
+    <p>You can see some of the previous projects I've worked on in the <a href="http://tmagazine.blogs.nytimes.com/2014/09/26/beijing-design-week-design-hop-program/?_r=1" target="_blank">NYTimes</a>, <a href="http://www.methodquarterly.com/2015/06/" target="_blank">Method Science Quarterly</a>, <a href="https://news.vice.com/article/why-have-us-drones-targeted-so-many-houses-in-pakistan" target="_blank">Vice</a>, <a href="http://spectrum.ieee.org/tech-talk/at-work/test-and-measurement/pollution-sensing-kites-to-fly-in-beijing-skies" target="_blank">IEEE</a>,
+      <a href="http://www.harvarddesignmagazine.org/issues/39/ocean-sensing" target="_blank">Harvard Design Magazine </a> and the <a href="http://www.bbc.com/news/world-asia-19355949" target="_blank">BBC</a>.
+
+      <p class="instructions">The terrain model is Landers, CA (34.2661&#176; N, 116.3922&#176; W).</p>
+      <p class="instructions">You can zoom and rotate the landscape or press "R" to toggle colors, "W" and "S" to toggle between plan and section view.</p>
+
+
+      <a class="social1" href="http://twitter.com/xrw" target="_blank">twitter</a>
+      <a class="social2" href="http://github.com/xrwang" target="_blank">github</a>
+   </div>
+
+
+
+
+
+
+
+
+   <div id="terrainlanders"></div>
+
+
+
+   <script src="/js/three.min.js"></script>
+   <script src="/js/Detector.js"></script>
+   <script src="/js/OrbitControls.js"></script>
+
+   <script src="/js/KeyboardState.js"></script>
+   <script src="/js/THREEx.FullScreen.js"></script>
+   <script src="/js/THREEx.WindowResize.js"></script>
+
+   <script src="/js/TrackballControls.js"></script>
+   <script src="/js/TerrainLoader.js"></script>
+   <script>
+   var clock = new THREE.Clock();
+
+   container = document.getElementById( 'terrainlanders' );
+       var width  = window.innerWidth,
+           height = window.innerHeight;
+       var scene = new THREE.Scene();
+       window.camera = new THREE.PerspectiveCamera(45, width / height, 1, 500);
+       camera.position.set(0, -20, 20);
+       var renderer = new THREE.WebGLRenderer();
+       renderer.setSize(width, height);
+       var terrainLoader = new THREE.TerrainLoader();
+       terrainLoader.load('/terrain-dem/ASTGTM2_N34W117_dem.bin', function(data)
+       {
+           window.geometry = new THREE.PlaneGeometry(60, 60, 199, 199);
+           for (var i = 0, l = geometry.vertices.length; i < l; i++) {
+               geometry.vertices[i].z = data[i] / 65535 * 10;
+           }
+           var material = new THREE.MeshBasicMaterial({
+               color: 0x66ff00
+           });
+
+           var plane = new THREE.Mesh(geometry, material);
+           var color = new THREE.Color("#66ff00");
+
+           window.wireframe = new THREE.WireframeHelper(plane, "#66ff00");
+           wireframe.material.color = new THREE.Color(0xBB377D);
+
+           scene.add(wireframe);
+       });
+       var controls = new THREE.TrackballControls(camera);
+       var keyboard = new KeyboardState();
+
+       document.getElementById('terrainlanders').appendChild(renderer.domElement);
+
+
+       animate();
+       render();
+
+
+       function animate()
+{
+    requestAnimationFrame( animate );
+	render();
+	update();
+}
+
+
+
+
+function update()
+{
+	keyboard.update();
+	var moveDistance = 50 * clock.getDelta();
+	if ( keyboard.down("W") )
+		 camera.position.set(0, -20, 20);
+
+  if ( keyboard.down("S") )
+   		 camera.position.set(0, -100, 10);
+
+	if ( keyboard.down("R") )
+		wireframe.material.color = new THREE.Color(0xFBD3E9);
+	if ( keyboard.up("R") )
+		wireframe.material.color = new THREE.Color(0xBB377D);
+
+	controls.update();
+}
+
+
+function render()
+{
+	renderer.render( scene, camera );
+}
+
+   </script>
+ <!-- <ul>
  <li><a href="/altitudes">altitudes</a></li>
  <li><a href="/clips">clippings</a></li>
-  </ul>
+  </ul> -->
  </body>
 </html>
