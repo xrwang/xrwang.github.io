@@ -1,0 +1,25 @@
+<PAMDataset>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="INTERLEAVE">BAND</MDI>
+  </Metadata>
+  <Metadata domain="ENVI">
+    <MDI key="bands">1</MDI>
+    <MDI key="byte_order">0</MDI>
+    <MDI key="data_type">12</MDI>
+    <MDI key="file_type">ENVI Standard</MDI>
+    <MDI key="header_offset">0</MDI>
+    <MDI key="interleave">bsq</MDI>
+    <MDI key="lines">200</MDI>
+    <MDI key="samples">200</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="AREA_OR_POINT">Area</MDI>
+    <MDI key="TIFFTAG_DATETIME">2011:03:16 02:46:58</MDI>
+    <MDI key="TIFFTAG_DOCUMENTNAME">created at</MDI>
+    <MDI key="TIFFTAG_IMAGEDESCRIPTION">SILC TIFF</MDI>
+    <MDI key="TIFFTAG_RESOLUTIONUNIT">2 (pixels/inch)</MDI>
+    <MDI key="TIFFTAG_SOFTWARE">IDL 7.1.1, ITT Visual Information Solutions</MDI>
+    <MDI key="TIFFTAG_XRESOLUTION">100</MDI>
+    <MDI key="TIFFTAG_YRESOLUTION">100</MDI>
+  </Metadata>
+</PAMDataset>
