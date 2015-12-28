@@ -24,9 +24,11 @@ body {
     font-size: 1.5em;
     padding: 1em 3em 1em 3em; }
   .cover a {
-    color: #1A7C88; }
+    color: #3b3e44;
+    text-decoration: none;}
+
   .cover a:hover {
-    color: #767C88; }
+    color: #1A7C88; }
   .cover p.instructions {
     font-weight: 400; }
 
