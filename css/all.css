@@ -14,35 +14,21 @@ body {
   font-weight: 700;
   color: white;
   position: fixed;
-  text-align: justify;
+  text-align: center;
   vertical-align: middle;
-  padding: 1.5em 1.5em;
-  width: 61.8%;
-  margin: 0 auto;
-
-  }
+  padding: 2em 2em; }
   .cover h1 {
-    padding-top: 1em;
-    font-size: 2em;
-    padding-left: 2.25em;
-  }
+    padding-top: 2em;
+    font-size: 3em; }
   .cover p {
     font-size: 1.5em;
-    padding: 0.5em 3em 0.5em 3em;
-  }
+    padding: 1em 3em 1em 3em; }
   .cover a {
-    color: #3b3e44;
-    text-decoration: none;}
-
-  .cover a:hover {
     color: #1A7C88; }
+  .cover a:hover {
+    color: #767C88; }
   .cover p.instructions {
     font-weight: 400; }
-
-  span.social{
-    padding-top: 2em;
-    padding-left: 4.5em;
-  }
 
 @media screen and (max-width: 880px) {
   body {
