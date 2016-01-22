@@ -54,6 +54,11 @@ div.small{
   font-size: 0.25em;
 }
 
+ul
+{
+    list-style-type: none;
+}
+
 notes {
     display:none;
 }
