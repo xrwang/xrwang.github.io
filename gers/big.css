@@ -1,6 +1,6 @@
 body {
   font-family:'Helvetica';
-  letter-spacing:-5px;
+  letter-spacing:-1px;
   background:#000;
   background-size:100%;
   color:#fff;
@@ -15,7 +15,7 @@ h1, h2, h3, p {
 
 em, a {
   font-style:normal;
-  color:#8dbd0c;
+  color:#f15757;
 }
 
 a {
@@ -46,6 +46,10 @@ div.imageText {
   text-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
 
+div.small{
+  font-size: 0.25em;
+}
+
 notes {
     display:none;
 }
@@ -53,4 +57,3 @@ notes {
 :focus {
     outline: 0;
 }
-
