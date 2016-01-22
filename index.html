@@ -1,138 +1,124 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <title>xiaowei r. wang</title>
-  <link rel="stylesheet" type="text/css" href="/css/all.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-22110434-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
- </head>
- <body>
-   <div class="cover">
-     <h1>Hi!</h1>
-     <p>I'm Xiaowei R. Wang, a designer, dreamer, and amateur geographer. I work at <a href="http://mapbox.com" target="_blank">Mapbox</a>.</p>
-
-    <p>You can see some of the previous projects I've worked on in the <a href="http://tmagazine.blogs.nytimes.com/2014/09/26/beijing-design-week-design-hop-program/?_r=1" target="_blank">NYTimes</a>, <a href="http://www.methodquarterly.com/2015/06/" target="_blank">Method Science Quarterly</a>, <a href="https://news.vice.com/article/why-have-us-drones-targeted-so-many-houses-in-pakistan" target="_blank">Vice</a>, <a href="http://spectrum.ieee.org/tech-talk/at-work/test-and-measurement/pollution-sensing-kites-to-fly-in-beijing-skies" target="_blank">IEEE</a>,
-      <a href="http://www.harvarddesignmagazine.org/issues/39/ocean-sensing" target="_blank">Harvard Design Magazine </a> and the <a href="http://www.bbc.com/news/world-asia-19355949" target="_blank">BBC</a>.
-
-
-      <p class="instructions">You can zoom and rotate the landscape or press "R" to toggle colors, "W" and "S" to toggle between plan and section view.</p>
-      <p class="instructions">The terrain model is Landers, CA (34.2661&#176; N, 116.3922&#176; W), a place at the intersection of many <a href="http://www.bibliotecapleyades.net/mapas_ocultotierra/esp_mapa_ocultotierra_15.htm" target="_blank">ley lines</a>. The elevation information is from <a href="http://gdem.ersdac.jspacesystems.or.jp/" target="_blank">ASTER GDEM</a></p>
-
-      <span class="social">
-      <a class="social1" href="http://twitter.com/xrw" target="_blank">twitter</a>
-      <a class="social2" href="http://github.com/xrwang" target="_blank">github</a>
-      </span>
-   </div>
-
-
-
-
-
-
-
-
-   <div id="terrainlanders"></div>
-
-
-
-   <script src="/js/three.min.js"></script>
-   <script src="/js/Detector.js"></script>
-   <script src="/js/OrbitControls.js"></script>
-
-   <script src="/js/KeyboardState.js"></script>
-   <script src="/js/THREEx.FullScreen.js"></script>
-   <script src="/js/THREEx.WindowResize.js"></script>
-
-   <script src="/js/TrackballControls.js"></script>
-   <script src="/js/TerrainLoader.js"></script>
-   <script>
-   var clock = new THREE.Clock();
-
-   container = document.getElementById( 'terrainlanders' );
-       var width  = window.innerWidth,
-           height = window.innerHeight;
-       var scene = new THREE.Scene();
-       window.camera = new THREE.PerspectiveCamera(45, width / height, 1, 500);
-       camera.position.set(0, -20, 20);
-       var renderer = new THREE.WebGLRenderer();
-       renderer.setSize(width, height);
-       var terrainLoader = new THREE.TerrainLoader();
-       terrainLoader.load('/terrain-dem/ASTGTM2_N34W117_dem.bin', function(data)
-       {
-           window.geometry = new THREE.PlaneGeometry(60, 60, 199, 199);
-           for (var i = 0, l = geometry.vertices.length; i < l; i++) {
-               geometry.vertices[i].z = data[i] / 65535 * 10;
-           }
-           var material = new THREE.MeshBasicMaterial({
-               color: 0x66ff00
-           });
-
-           var plane = new THREE.Mesh(geometry, material);
-           var color = new THREE.Color("#66ff00");
-
-           window.wireframe = new THREE.WireframeHelper(plane, "#66ff00");
-           wireframe.material.color = new THREE.Color(0xBB377D);
-
-           scene.add(wireframe);
-       });
-       var controls = new THREE.TrackballControls(camera);
-       var keyboard = new KeyboardState();
-
-       document.getElementById('terrainlanders').appendChild(renderer.domElement);
-
-
-       animate();
-       render();
-
-
-       function animate()
-{
-    requestAnimationFrame( animate );
-	render();
-	update();
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><style type='text/css'>
+body {
+  font-family:'Helvetica';
+  letter-spacing:-5px;
+  background:#000;
+  background-size:100%;
+  color:#fff;
+  margin:0;
+  padding:0;
+  font-weight:bold;
 }
 
-
-
-
-function update()
-{
-	keyboard.update();
-	var moveDistance = 50 * clock.getDelta();
-	if ( keyboard.down("W") )
-		 camera.position.set(0, -20, 20);
-
-  if ( keyboard.down("S") )
-   		 camera.position.set(0, -100, 10);
-
-	if ( keyboard.down("R") )
-		wireframe.material.color = new THREE.Color(0xFBD3E9);
-	if ( keyboard.up("R") )
-		wireframe.material.color = new THREE.Color(0xBB377D);
-
-	controls.update();
+h1, h2, h3, p {
+  margin:0;
 }
 
-
-function render()
-{
-	renderer.render( scene, camera );
+em, a {
+  font-style:normal;
+  color:#8dbd0c;
 }
 
-   </script>
- <!-- <ul>
- <li><a href="/altitudes">altitudes</a></li>
- <li><a href="/clips">clippings</a></li>
-  </ul> -->
- </body>
-</html>
+a {
+  background:#34d0e7;
+  color:#000;
+  text-decoration:none;
+}
+
+img {
+  width:100%;
+}
+
+div {
+  cursor:pointer;
+  cursor:hand;
+  position:absolute;
+  top:0px;
+  left:0px;
+  padding:75px;
+  line-height:97%;
+}
+
+div.center {
+  text-align:center;
+}
+
+div.imageText {
+  text-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+
+notes {
+    display:none;
+}
+/* normally not good, but ok in context of full screen directional navigation */
+:focus {
+    outline: 0;
+}
+
+</style><script type='text/javascript'>
+window.onload = function() {
+    var s = document.getElementsByTagName('div'), ti, i;
+    for (i = 0; i < s.length; i++) s[i].setAttribute('tabindex', 0);
+    if (!s) return;
+    var big = { current: 0, forward: fwd, reverse: rev, go: go, length: s.length };
+    window.big = big;
+    function resize() {
+        var w = window.innerWidth, h = window.innerHeight, e = s[big.current];
+        e.style.fontSize = h + 'px';
+        for (i = h - 2; i > 0 && (e.offsetWidth > w || e.offsetHeight > h); i -= 2) {
+            e.style.fontSize = i + 'px';
+        }
+        e.style.marginTop = (h - e.offsetHeight) / 2 + 'px';
+    }
+    function go(n) {
+        big.current = n;
+        var e = s[n], t = parseInt(e.getAttribute('data-timeToNext') || 0, 10),
+            notes = e.getElementsByTagName('notes');
+        document.body.className = e.getAttribute('data-bodyclass') || '';
+        for (i = 0; i < s.length; i++) s[i].style.display = 'none';
+        e.style.display = 'inline';
+        e.focus();
+        for (i = 0; typeof console === 'object' && i < notes.length; i++) console.log('%c%s: %s', 'padding:5px;font-family:serif;font-size:18px;line-height:150%;', n, notes[i].innerHTML.trim());
+        if (e.firstChild && e.firstChild.nodeName === 'IMG') {
+            document.body.style.backgroundImage = 'url("' + e.firstChild.src + '")';
+            e.firstChild.style.display = 'none';
+            if ('classList' in e) e.classList.add('imageText');
+        } else {
+            document.body.style.backgroundImage = '';
+            document.body.style.backgroundColor = e.style.backgroundColor;
+        }
+        if (ti !== undefined) window.clearInterval(ti);
+        if (t > 0) ti = window.setTimeout(fwd, t * 1000);
+        resize();
+        if (window.location.hash !== n) window.location.hash = n;
+        document.title = e.textContent || e.innerText;
+    }
+    document.onclick = function() { go(++big.current % s.length); };
+    function fwd() { go(Math.min(s.length - 1, ++big.current)); }
+    function rev() { go(Math.max(0, --big.current)); }
+    document.onkeydown = function(e) {
+        if (e.which === 39 || e.which === 34 || e.which === 40) fwd();
+        if (e.which === 37 || e.which === 33 || e.which === 38) rev();
+    };
+    document.ontouchstart = function(e) {
+        var x0 = e.changedTouches[0].pageX;
+        document.ontouchend = function(e2) {
+            var x1 = e2.changedTouches[0].pageX;
+            if (x1 - x0 < 0) fwd();
+            if (x1 - x0 > 0) rev();
+        };
+    };
+    function parse_hash() {
+        return Math.max(Math.min(s.length - 1,
+            parseInt(window.location.hash.substring(1), 10)), 0);
+    }
+    if (window.location.hash) big.current = parse_hash() || big.current;
+    window.onhashchange = function() {
+        i = parse_hash();
+        if (i !== big.current) go(i);
+    };
+    window.onresize = resize;
+    go(big.current);
+};
+</script></head><body>
+<div>welcome to <em>Big</em></div>
