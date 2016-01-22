@@ -12,6 +12,10 @@ body {
 h1, h2, h3, p {
   margin:0;
 }
+h4{
+  font-size: 20%;
+  display: inline !important;
+}
 
 em, a {
   font-style:normal;
