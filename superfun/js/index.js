@@ -95,7 +95,7 @@ map.on('mousemove', function (e) {
 // var geoc = map.addControl(geocoder);
 //
 //
-// var geolocate = document.getElementById('current-location-btn');
+var geolocate = document.getElementById('current-location-btn');
 
 
 

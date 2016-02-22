@@ -65,7 +65,7 @@ a:focus {
 
 
 #current-location-btn {
-  background: #348cc2;
+  background: #42dca3;
   color: #fff;
   display: inline;
   width: 40px;
@@ -86,7 +86,7 @@ a:focus {
 }
 
 #current-location-btn:hover {
-  background: #48b6e8;
+  background: #1d9b6c;
   cursor: pointer;
 }
 
