@@ -117,10 +117,10 @@ footer p {
 }
 
 #infopanel{
-  width: 24%;
+  width: 30%;
   z-index: 1;
   background: #fff;
-  height: 600px;
+  height: 620px;
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 10px;
@@ -130,6 +130,12 @@ footer p {
 
 #infopanel p {
   font-size: 1em;
+}
+
+#infopanel p.description{
+  font-size: 0.9em;
+
+
 }
 
 .mapboxgl-ctrl-top-left{
@@ -153,3 +159,15 @@ footer p {
   min-width: 180px;
   max-width:200px;
 }
+
+
+.mapboxgl-popup {
+        max-width: 400px;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+    }
+
+    .mapboxgl-popup p {
+          padding: 1em 0.5em 0em 0.5em;
+          font-size: 1em;
+    }
