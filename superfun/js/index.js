@@ -22,7 +22,7 @@ map.on('style.load', function () {
         "type": "symbol",
         "source": "markers",
         "layout": {
-            "icon-image": "default_marker",
+            "icon-image": "superfund",
             "icon-size": 1.25
         },
         "paint": {
@@ -64,37 +64,14 @@ map.on('mousemove', function (e) {
 });
 
 
+var geocoder = new mapboxgl.Geocoder({position: 'bottom-right'});
+
+var geoc = map.addControl(geocoder);
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-// var geocoder = new mapboxgl.Geocoder();
-//
-// var geoc = map.addControl(geocoder);
-//
-//
 var geolocate = document.getElementById('current-location-btn');
 
 

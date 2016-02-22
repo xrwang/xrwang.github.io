@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="32px" viewBox="0 0 20 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>svg4148</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-151.000000, -104.000000)">
+            <g id="svg4148" sketch:type="MSLayerGroup" transform="translate(151.000000, 104.000000)">
+                <g id="path5366_1_" transform="translate(1.000000, 21.000000)" fill="#1D9B6C" sketch:type="MSShapeGroup" fill-opacity="0.699615036">
+                    <ellipse id="Oval" cx="9" cy="5.971" rx="8.99" ry="4.995"></ellipse>
+                </g>
+                <g id="path5359_1_" sketch:type="MSShapeGroup">
+                    <path d="M10,27.432 C10,27.432 0.51,16.593 0.51,10.353 C0.51,4.911 4.759,0.5 10,0.5 C15.241,0.5 19.49,4.911 19.49,10.353 C19.49,16.593 10,27.432 10,27.432 Z" id="Shape" fill="#42DCA3"></path>
+                    <path d="M10,27.93 C9.856,27.93 9.72,27.867 9.624,27.759 C9.231,27.311 0.01,16.707 0.01,10.353 C0.01,4.644 4.491,0 10,0 C15.509,0 19.99,4.644 19.99,10.353 C19.99,16.707 10.769,27.311 10.376,27.759 C10.28,27.868 10.144,27.93 10,27.93 L10,27.93 Z M10,0.999 C5.043,0.999 1.009,5.195 1.009,10.353 C1.009,15.64 8.25,24.579 10,26.66 C11.748,24.581 18.991,15.638 18.991,10.353 C18.99,5.195 14.957,0.999 10,0.999 L10,0.999 Z" id="Shape" fill="#1D9B6C"></path>
+                </g>
+                <g id="path5990_1_" transform="translate(6.000000, 5.000000)" sketch:type="MSShapeGroup">
+                    <circle id="Oval" fill="#E6F4EF" cx="4" cy="4.989" r="3.496"></circle>
+                    <path d="M4,8.985 C1.797,8.985 0.005,7.193 0.005,4.99 C0.005,2.787 1.797,0.993 4,0.993 C6.203,0.993 7.997,2.787 7.997,4.99 C7.997,7.193 6.203,8.985 4,8.985 L4,8.985 Z M4,1.992 C2.348,1.992 1.004,3.336 1.004,4.989 C1.004,6.641 2.348,7.985 4,7.985 C5.654,7.985 6.997,6.641 6.997,4.989 C6.997,3.336 5.653,1.992 4,1.992 L4,1.992 Z" id="Shape" fill="#1D9B6C"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
