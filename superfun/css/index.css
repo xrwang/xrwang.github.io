@@ -1,0 +1,155 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #000;
+    background-color: #000;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: #42dca3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+
+.light {
+    font-weight: 400;
+}
+
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  right: 0;
+}
+
+
+
+#current-location-btn {
+  background: #348cc2;
+  color: #fff;
+  display: inline;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+          box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+#current-location-btn img {
+  max-width: 100%;
+}
+
+#current-location-btn:hover {
+  background: #48b6e8;
+  cursor: pointer;
+}
+
+
+footer {
+    padding: 50px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container{
+  display: flex;
+  display: -ms-flex;
+	display: -webkit-flex;
+
+  padding: 0;
+  margin: 0;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: left;
+}
+
+#infopanel{
+  width: 24%;
+  z-index: 1;
+  background: #fff;
+  height: 600px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 1em;
+}
+
+#infopanel p {
+  font-size: 1em;
+}
+
+.mapboxgl-ctrl-top-left{
+  z-index: 999;
+  margin-top: 0px;
+  width: 50px;
+
+}
+
+.label-for{
+  /*border: 1px solid red;*/
+  padding-top: 2em;
+}
+
+.mapboxgl-ctrl-geocoder.mapboxgl-ctrl{
+  /*border: 5px solid red;*/
+  z-index: 999;
+  position: relative;
+  margin-top:260px;
+  margin-left: 1.5em;
+  min-width: 180px;
+  max-width:200px;
+}
