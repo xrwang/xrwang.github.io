@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
 body {
-  background: #FBD3E9;
+  background: #f15757;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #FBD3E9, #BB377D);
+  background: -webkit-linear-gradient(to left, #f15757, F97F4D);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #FBD3E9, #BB377D);
+  background: linear-gradient(to left, #f15757, F97F4D);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .cover {
