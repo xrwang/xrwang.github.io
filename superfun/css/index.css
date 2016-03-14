@@ -92,6 +92,22 @@ a:focus {
 }
 
 
+.gradient {
+  height: 15px;
+  width: 90px;
+  background-color: #DEDCDC;
+  background-image:
+    linear-gradient(
+      to right,
+      #DEDCDC,
+      #C2BBCA 70%
+    );
+}
+
+.gradient-legend{
+  font-size: 10px;
+}
+
 footer {
     padding: 50px 0;
 }
@@ -117,6 +133,7 @@ footer p {
   justify-content: left;
 }
 
+
 #infopanel{
   width: 34%;
   z-index: 1;
@@ -135,11 +152,13 @@ footer p {
 }
 
 #infopanel p.description{
-  font-size: 0.9em;
+  font-size: 0.85em;
   padding-bottom: 1em;
   margin-bottom: 0.5em;
 
 }
+
+
 
 ul{
   font-size: 0.9em;
@@ -240,6 +259,10 @@ li{
 
 
   }
+
+  p.caption{
+    font-size: 0.7em !important;
+  }
   @media only screen and (max-width: 950px) {
     .container{
          display: -webkit-flex;
@@ -298,5 +321,7 @@ li{
 
 
   }
+
+
 
   }

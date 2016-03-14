@@ -27,12 +27,6 @@
     <!-- Custom Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 <body>
@@ -47,33 +41,40 @@
 
     <!-- <div class = "mapboxgl-ctrl-geocoder"></div> -->
 
-    <p>
-      Where are all the Superfund + TRI sites?
-    </p>
+
 
 
       <button id="current-location-btn">
           <img src="img/getlocation.svg" />
       </button>
-        Get the closest sites near me
+        Find the closest Superfund site near me
+        <p class ="description">
+        </br>
+          What is the relationship between Superfund pollution sites and anthropogenic species richness (ASR) in plants? Where are Superfund sites located in the US, and what does plant biodiversity look like in areas surrounding Superfund sites? Does ecological disturbance help biodiversity?
+        <p class ="caption"> Plant species biodiversity data for this map is from <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0030535#abstract0" target="_blank"> Ellis, Erle C., Erica C. Antill, and Holger Kreft. "All Is Not Loss: Plant Biodiversity in the Anthropocene." PLoS ONE 7.1 (2012)</a> Check out the article for more on ASR and plant biodiversity loss as a result of urbanization/anthropogenic influence.</p>
+        </p>
+        </a>
+        <div class="gradient">
+        </div>
+        <div class="gradient-legend">
+        1.0 ASR/N &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.9+
+        </nav>
+        </div>
         <div class="symbol-super">
           <img src="img/superfund.svg">
         </div>
         <p class = "description">
-          A <em>Superfund</em> site is "any land in the United States that has been contaminated by hazardous waste and identified by the EPA as a candidate for cleanup because it poses a risk to human health and/or the environment."
+          Superfund site
         </p>
         <ul>
-          Data legend:
           <li>HRS = Hazardous Ranking System (A score of 28.50+ puts a Superfund site on the National Priority List)</li>
-
           <li>Site status: D= Deleted, F = Final, W = Withdrawn and P = Proposed. For a full description of status visit <a href= "http://toxmap.nlm.nih.gov/toxmap/faq/2009/08/what-are-the-superfund-site-npl-statuses.html" target="_blank">here</a>.</li>
         </ul>
         <div class="symbol">
           <img src="img/tri.svg">
         </div>
         <p class = "description">
-          <em>TRI (Toxic Release Inventory Program)</em> covers "Facilities with ten or more full-time employees that process more than 25,000 pounds in aggregate, or use greater than 10,000 pounds of any one TRI chemical." A list of TRI chemicals are located
-          <a href="http://toxmap-classic.nlm.nih.gov/toxmap/main/chemicals.jsp" target ="_blank">here</a>.
+          TRI (Toxic Release Inventory Program) Site
         </p>
 
 
@@ -91,6 +92,16 @@
         <h4 class="modal-title" id="myModalLabel">More information</h4>
       </div>
       <div class="modal-body">
+        The idea for this map is inspired by Erle Ellis + lab's work on anthropogenic landscape ecology. See more at <a href="http://ecosynth.org/" target="_blank">ecosynth.org</a> and <a href="http://ecotope.org/about/" target="_blank">ecotope.org</a>
+      </br></br>
+      The pollution site data for this map is a remix of <a href="http://toxmap-classic.nlm.nih.gov/toxmap/combo/select.do" target="_blank">TOXMAP</a>, a project from the NIH.gov.
+    </br></br>
+        <em>TRI (Toxic Release Inventory Program)</em> covers "Facilities with ten or more full-time employees that process more than 25,000 pounds in aggregate, or use greater than 10,000 pounds of any one TRI chemical." A list of TRI chemicals are located
+        <a href="http://toxmap-classic.nlm.nih.gov/toxmap/main/chemicals.jsp" target ="_blank">here</a>. TRI sites can range from auto body shops to dry cleaners, to industrial waste processing facilities.
+      </br></br>
+         A <em>Superfund</em> site is "any land in the United States that has been contaminated by hazardous waste and identified by the EPA as a candidate for cleanup because it poses a risk to human health and/or the environment."
+
+
         For more information about Superfund sites and TRI facilities, visit:
 
         <ul>
@@ -101,10 +112,6 @@
         <li><a href="http://www.epa.gov/toxics-release-inventory-tri-program/learn-about-toxics-release-inventory#What is the Toxics Release Inventory?" target="_blank">TRI info on EPA</a></li>
         <li><a href="http://toxmap-classic.nlm.nih.gov/toxmap/faq/2009/08/what-is-the-toxics-release-inventory-tri.html" target="_blank">TRI info on NIH</a></li>
       </ul>
-
-
-        This map is a remix of <a href="http://toxmap-classic.nlm.nih.gov/toxmap/combo/select.do" target="_blank">Toxmap</a>.
-
       </div>
     </div>
   </div>
