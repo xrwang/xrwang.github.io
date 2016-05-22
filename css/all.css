@@ -22,12 +22,12 @@ body {
 
 .cover h1 {
   padding-top: 1em;
-  font-size: 2em;
-  padding-left: 2.25em; }
+  font-size: 1.5em;
+  padding-left: 0.75em; }
 
 .cover p {
-  font-size: 1.5em;
-  padding: 0.5em 3em 0.5em 3em; }
+  font-size: 1.25em;
+  padding: 0.25em 3em 0.25em 1em; }
 
 .cover a {
   color: #29496E;
@@ -41,7 +41,7 @@ body {
 
 span.social {
   padding-top: 2em;
-  padding-left: 4.5em; }
+  padding-left: 1.5em; }
 
 @media screen and (max-width: 880px) {
   body {
