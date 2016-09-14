@@ -16,3 +16,4 @@ terrain-dem/landersbyte.tif
 terrain-dem/landersuint.png
 terrain-dem/landersuint.png.aux.xml
 terrain-dem/landersuint.tif
+node_modules/
