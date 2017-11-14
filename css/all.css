@@ -10,15 +10,17 @@ body {
 
 .cover {
   overflow: hidden;
+  /*background-color: white;*/
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: white;
+  /*color: white; opacity: 1;*/
   position: fixed;
   text-align: justify;
   vertical-align: middle;
   padding: 1.5em 1.5em;
   width: 61.8%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .cover h1 {
   padding-top: 1em;
@@ -27,7 +29,10 @@ body {
 
 .cover p {
   font-size: 1em;
-  padding-left: 1rem; }
+  padding-left: 1rem;
+  color: white;
+  z-index: 2;
+}
 
 .cover a {
   color: #29496E;
