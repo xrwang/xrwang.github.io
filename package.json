@@ -4,8 +4,6 @@
   "description": "website for xrw",
   "main": "index.js",
   "scripts": {
-    "test": "bamp",
-    "start": "budo demo.js --live"
   },
   "repository": {
     "type": "git",
