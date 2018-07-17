@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/xrwang/xrwang.github.io.git"
   },
-  "keywords": [
-    "website"
-  ],
   "author": "xiaowei wang",
   "license": "mit open source",
   "bugs": {
