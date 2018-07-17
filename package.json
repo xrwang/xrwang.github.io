@@ -4,7 +4,6 @@
   "description": "website for xrw",
   "main": "index.js",
   "scripts": {
-    "test": "bamp"
   },
   "repository": {
     "type": "git",
