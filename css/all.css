@@ -1,18 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,700);
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
 body {
-  background: #d8412F;
+  background: #e04c78;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #d8412F, #fe7a47);
+  background: -webkit-linear-gradient(to right, #e04c78, #45f9db);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #d8412F, #fe7a47);
+  background: linear-gradient(to right, #e04c78, #45f9db);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .cover {
   overflow: hidden;
   /*background-color: white;*/
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   /*color: white; opacity: 1;*/
   position: fixed;
   text-align: justify;
@@ -23,9 +23,12 @@ body {
 }
 
 .cover h1 {
-  padding-top: 1em;
-  font-size: 1em;
-  padding-left: 1rem; }
+  padding-top: 0em;
+  margin-top: 0em;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  color: white;
+}
 
 .cover p {
   font-size: 1em;
@@ -48,6 +51,11 @@ span.social {
   padding-top: 2em;
   padding-left: 1rem; }
 
-@media screen and (max-width: 880px) {
+
+#terrainlanders {
+  width: 80%;
+  float: right;
+}
+@media screen and (max-width: 1200px) {
   body {
-    font-size: 10px; } }
+    font-size: .5rem; } }
