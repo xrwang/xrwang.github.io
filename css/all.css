@@ -47,10 +47,18 @@ body {
 .cover p.instructions {
   font-weight: 400; }
 
-span.social {
-  padding-top: 2em;
-  padding-left: 1rem; }
+.social {
+  padding-bottom: 0.7em;
+  padding-left:1rem;
+}
 
+.cover.events{
+  line-height: 1.5em;
+}
+
+a.social1.bold {
+  font-weight:600;
+}
 
 #terrainlanders {
   width: 80%;
