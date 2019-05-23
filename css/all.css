@@ -25,13 +25,13 @@ body {
 .cover h1 {
   padding-top: 0em;
   margin-top: 0em;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-left: 1rem;
   color: white;
 }
 
 .cover p {
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding-left: 1rem;
   color: white;
   z-index: 2;
