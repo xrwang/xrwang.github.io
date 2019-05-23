@@ -64,6 +64,7 @@ a.social1.bold {
   width: 80%;
   float: right;
 }
+
 @media screen and (max-width: 1200px) {
   body {
     font-size: .5rem; } }
