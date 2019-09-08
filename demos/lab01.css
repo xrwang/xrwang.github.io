@@ -1,0 +1,8 @@
+#map {
+  height: 500px;
+}
+
+/* the line below styles the popup window */
+.leaflet-popup-content-wrapper {
+  width: 100%;
+}

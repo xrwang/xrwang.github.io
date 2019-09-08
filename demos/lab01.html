@@ -1,0 +1,60 @@
+<html>
+  <head>
+  <title>Simple Leaflet Map</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="lab01.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
+  </head>
+  <body>
+  <p>
+    This map below is made using LeafletJS and Javascript!
+  </p>
+  <p>
+    To view the source for this page:
+    <ol>
+      <li>Right click</li>
+      <li>Inspect (or "View source")</li>
+    </ol>
+      From there you will see how this page is constructed.<br>
+      After poking around in the source, you can also try changing things in an interactive demo:
+      <a href="https://codepen.io/xrwang/pen/xxKYpQq">https://codepen.io/xrwang/pen/xxKYpQq</a>
+    </p>
+  <div id="map"></div>
+    <script type="text/javascript">
+    // Initialize the map and assign it to a variable for later use
+    // there's a few ways to declare a VARIABLE in javascript.
+    // you might also see people declaring variables using `const` and `let`
+    var map = L.map('map', {
+        // Set latitude and longitude of the map center (required)
+        center: [37.875, -122.26],
+        // Set the initial zoom level, values 0-18, where 0 is most zoomed-out (required)
+        zoom: 16
+    });
+
+
+    // Create a Tile Layer and add it to the map
+    var tiles = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+
+    //Create a marker object
+    var marker = L.marker(
+      [37.874, -122.2596],
+      {
+        draggable: true,
+        title: "This is the spot. This title by default doesn't show up!",
+        opacity: 0.75
+    });
+
+    //Add the marker to the map
+    //then we need to "bindPopup"
+    marker.addTo(map).bindPopup("<p><b>UC Berkeley</b><br>McCone Hall</p>") .openPopup();
+    </script>
+  </body>
+</html>
