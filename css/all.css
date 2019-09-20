@@ -65,6 +65,9 @@ a.social1.bold {
   float: right;
 }
 
+p.caption {
+  font-size: 0.2em;
+}
 @media screen and (max-width: 1200px) {
   body {
     font-size: .5rem; } }
