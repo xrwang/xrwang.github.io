@@ -9,7 +9,7 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .cover {
-  overflow: hidden;
+  /* overflow: hidden; */
   /*background-color: white;*/
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -18,7 +18,7 @@ body {
   text-align: justify;
   vertical-align: middle;
   padding: 1.5em 1.5em;
-  width: 61.8%;
+  width: 65.8%;
   margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .cover.events{
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 a.social1.bold {
@@ -68,6 +68,7 @@ a.social1.bold {
 p.caption {
   font-size: 0.2em;
 }
+
 @media screen and (max-width: 1200px) {
   body {
     font-size: .5rem; } }
