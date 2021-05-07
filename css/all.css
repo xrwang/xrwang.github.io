@@ -10,10 +10,12 @@ body {
   background: linear-gradient(to right, #e04c78, #45f9db);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow-x: hidden;
+  width: 100%;
 }
 
 .cover {
-  /* overflow: hidden; */
+  overflow: hidden;
+
   /*background-color: white;*/
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -22,7 +24,7 @@ body {
   text-align: justify;
   vertical-align: middle;
   padding: 1em 1em;
-  width: 70%;
+  width: 75%;
 }
 
 .cover h1 {
@@ -34,8 +36,8 @@ body {
 }
 
 .cover p {
-  font-size: 2rem;
-  padding-left: 1rem;
+  font-size: 1.2em;
+  padding-left: 0.5rem;
   color: white;
   z-index: 2;
 }
@@ -64,7 +66,7 @@ a.social1.bold {
 }
 
 #terrainlanders {
-  width: 80%;
+  width: 100%;
   float: right;
 }
 
