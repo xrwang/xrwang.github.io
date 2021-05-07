@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,700);
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+
 body {
   background: #e04c78;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #e04c78, #45f9db);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #e04c78, #45f9db);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
+}
 
 .cover {
   /* overflow: hidden; */
@@ -17,21 +21,20 @@ body {
   position: fixed;
   text-align: justify;
   vertical-align: middle;
-  padding: 1.5em 1.5em;
-  width: 65.8%;
-  margin: 0 auto;
+  padding: 1em 1em;
+  width: 70%;
 }
 
 .cover h1 {
   padding-top: 0em;
   margin-top: 0em;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-left: 1rem;
   color: white;
 }
 
 .cover p {
-  font-size: 0.9em;
+  font-size: 2rem;
   padding-left: 1rem;
   color: white;
   z-index: 2;
@@ -53,7 +56,7 @@ body {
 }
 
 .cover.events{
-  line-height: 1.2em;
+
 }
 
 a.social1.bold {
@@ -71,4 +74,4 @@ p.caption {
 
 @media screen and (max-width: 1200px) {
   body {
-    font-size: .5rem; } }
+    font-size: 1rem; } }
