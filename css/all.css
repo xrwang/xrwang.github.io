@@ -14,7 +14,7 @@ body {
 }
 
 .cover {
-  overflow: hidden;
+  /* overflow: hidden; */
 
   /*background-color: white;*/
   font-family: 'Montserrat', sans-serif;
@@ -76,4 +76,15 @@ p.caption {
 
 @media screen and (max-width: 1200px) {
   body {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  }
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 0.7em;
+ }
+ .cover {
+   width: 90% !important;
+   padding: 0em !important;
+ }
+}
