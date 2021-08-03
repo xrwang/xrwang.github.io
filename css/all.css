@@ -20,7 +20,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   /*color: white; opacity: 1;*/
-  position: fixed;
+  position: absolute;
   text-align: justify;
   vertical-align: middle;
   padding: 1em 1em;
