@@ -48,7 +48,7 @@
 
 
 
-   <script src="/js/three.min.js"></script>
+   <!-- <script src="/js/three.min.js"></script>
    <script src="/js/Detector.js"></script>
    <script src="/js/OrbitControls.js"></script>
 
@@ -57,80 +57,81 @@
    <script src="/js/THREEx.WindowResize.js"></script>
 
    <script src="/js/TrackballControls.js"></script>
-   <script src="/js/TerrainLoader.js"></script>
+   <script src="/js/TerrainLoader.js"></script> -->
    <script>
-   var clock = new THREE.Clock();
-
-   container = document.getElementById( 'terrainlanders' );
-       var width  = window.innerWidth,
-           height = window.innerHeight;
-       var scene = new THREE.Scene();
-       window.camera = new THREE.PerspectiveCamera(60, 3, 20, 900);
-       camera.position.set(3, -30, 30);
-       var renderer = new THREE.WebGLRenderer();
-       renderer.setSize(width, height);
-       var terrainLoader = new THREE.TerrainLoader();
-       terrainLoader.load('/terrain-dem/ASTGTM2_N34W117_dem.bin', function(data)
-       {
-           window.geometry = new THREE.PlaneGeometry(60, 60, 199, 199);
-           for (var i = 0, l = geometry.vertices.length; i < l; i++) {
-               geometry.vertices[i].z = data[i] / 65535 * 10;
-           }
-           var material = new THREE.MeshBasicMaterial({
-               color: 0xf5ca99
-           });
-
-           var plane = new THREE.Mesh(geometry, material);
-           var color = new THREE.Color("#c6bcc2");
-
-           window.wireframe = new THREE.WireframeHelper(plane, "#c6bcc2");
-           wireframe.material.color = new THREE.Color(0xc6bcc2);
-
-           scene.add(wireframe);
-       });
-       var controls = new THREE.TrackballControls(camera);
-       var keyboard = new KeyboardState();
-
-       document.getElementById('terrainlanders').appendChild(renderer.domElement);
-
-
-       animate();
-       render();
-
-
-       function animate()
-{
-    requestAnimationFrame( animate );
-	render();
-	update();
-}
-
-
-
-
-function update()
-{
-	keyboard.update();
-	var moveDistance = 50 * clock.getDelta();
-	if ( keyboard.down("W") )
-		 camera.position.set(0, -20, 20);
-
-  if ( keyboard.down("S") )
-   		 camera.position.set(0, -100, 10);
-
-	if ( keyboard.down("R") )
-		wireframe.material.color = new THREE.Color(0xc6bcc2);
-	if ( keyboard.up("R") )
-		wireframe.material.color = new THREE.Color(0xf5ca99);
-
-	controls.update();
-}
-
-
-function render()
-{
-	renderer.render( scene, camera );
-}
+//    var clock = new THREE.Clock();
+//
+//    container = document.getElementById( 'terrainlanders' );
+//        var width  = window.innerWidth,
+//            height = window.innerHeight;
+//        var scene = new THREE.Scene();
+//        window.camera = new THREE.PerspectiveCamera(60, 3, 20, 900);
+//        camera.position.set(3, -30, 30);
+//        var renderer = new THREE.WebGLRenderer();
+//        renderer.setSize(width, height);
+//        var terrainLoader = new THREE.TerrainLoader();
+//        terrainLoader.load('/terrain-dem/ASTGTM2_N34W117_dem.bin', function(data)
+//        {
+//            window.geometry = new THREE.PlaneGeometry(60, 60, 199, 199);
+//            for (var i = 0, l = geometry.vertices.length; i < l; i++) {
+//                geometry.vertices[i].z = data[i] / 65535 * 10;
+//            }
+//            var material = new THREE.MeshBasicMaterial({
+//                color: 0xf5ca99
+//            });
+//
+//            var plane = new THREE.Mesh(geometry, material);
+//            var color = new THREE.Color("#c6bcc2");
+//
+//            window.wireframe = new THREE.WireframeHelper(plane, "#c6bcc2");
+//            wireframe.material.color = new THREE.Color(0xc6bcc2);
+//
+//            scene.add(wireframe);
+//        });
+//        var controls = new THREE.TrackballControls(camera);
+//        var keyboard = new KeyboardState();
+//
+//        document.getElementById('terrainlanders').appendChild(renderer.domElement);
+//
+//
+//        animate();
+//        render();
+//
+//
+//        function animate()
+// {
+//     requestAnimationFrame( animate );
+// 	render();
+// 	update();
+// }
+//
+//
+//
+//
+// function update()
+// {
+// 	keyboard.update();
+// 	var moveDistance = 50 * clock.getDelta();
+// 	if ( keyboard.down("W") )
+// 		 camera.position.set(0, -20, 20);
+//
+//   if ( keyboard.down("S") )
+//    		 camera.position.set(0, -100, 10);
+//
+// 	if ( keyboard.down("R") )
+// 		wireframe.material.color = new THREE.Color(0xc6bcc2);
+// 	if ( keyboard.up("R") )
+// 		wireframe.material.color = new THREE.Color(0xf5ca99);
+//
+// 	controls.update();
+// }
+//
+//
+// function render()
+// {
+// 	renderer.render( scene, camera );
+// }
+  window.location.replace("https://www.xiaoweiwang.com/");
 
    </script>
  <!-- <ul>
